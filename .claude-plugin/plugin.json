@@ -1,0 +1,9 @@
+{
+  "name": "azure-diagrams",
+  "version": "0.1.0",
+  "description": "Generate 16:9 draw.io architecture and flow diagrams with official Azure and Power Platform icons from Mermaid or plain-language descriptions, validated against the official draw.io MCP and a Microsoft Architecture Center design system.",
+  "author": {
+    "name": "Julio Pessan"
+  },
+  "keywords": ["azure", "drawio", "architecture", "diagrams", "mermaid", "powerpoint"]
+}
