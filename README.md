@@ -37,9 +37,9 @@ That last step is what makes this different from a one-shot generator: revision 
 
 The `examples/agentic-sales-intelligence/` case study is the plugin exercising itself end to end, warts and all:
 
-![Agentic Sales Intelligence Platform — Azure reference architecture, v3](examples/agentic-sales-intelligence/preview-v3.png)
+![Agentic Sales Intelligence Platform — Azure reference architecture](examples/agentic-sales-intelligence/preview.png)
 
-*Rendered directly from `v3-final.drawio` — 32 nodes, 8 zones, official azure2 icons, `routing: "libavoid"` connectors. Open the `.drawio` file yourself to confirm every shape is still natively editable, not a flattened export.*
+*Rendered directly from `agentic-sales-intelligence.drawio` — 32 nodes, 8 zones, official azure2 icons, `routing: "libavoid"` connectors. Open the `.drawio` file yourself to confirm every shape is still natively editable, not a flattened export.*
 
 | | v1 | v2 | v3 (final) |
 |---|---|---|---|
@@ -87,15 +87,14 @@ azure-diagrams/
 
 ## Reference example: Agentic Sales Intelligence Platform
 
-`examples/agentic-sales-intelligence/` walks through a real end-to-end generation and revision cycle for a 30+ node Azure architecture (agent orchestration, model routing, data platform, ingestion, platform foundations):
+`examples/agentic-sales-intelligence/` is the final, validated output of a real end-to-end generation and revision cycle for a 30+ node Azure architecture (agent orchestration, model routing, data platform, ingestion, platform foundations) — 32 nodes, 8 zones, 34 connectors, official `azure2` icons, rendered with `routing: "libavoid"` for clean obstacle-avoiding connector paths.
 
-| File | What it shows |
+| File | What it is |
 |---|---|
-| `v1.drawio` | First render from the supplied Mermaid — 32 nodes, 41 connectors, 8 zones. |
-| `v2.drawio` | Fixed legend overlap and detangled the Orchestration ↔ Model Layer connector fan. |
-| `v3-final.drawio` / `preview-v3.png` | Decluttered on request — cross-cutting and duplicate edges removed, 41 → 34 connectors (-17%), rendered with `routing: "libavoid"`. |
+| `agentic-sales-intelligence.drawio` | Final architecture — native, editable draw.io XML. |
+| `preview.png` | Rendered preview for a quick look before opening the file. |
 
-Open any file directly in [draw.io](https://app.diagrams.net) or the desktop app.
+Open the `.drawio` file directly in [draw.io](https://app.diagrams.net) or the desktop app.
 
 ## Install
 
