@@ -37,6 +37,10 @@ That last step is what makes this different from a one-shot generator: revision 
 
 The `examples/agentic-sales-intelligence/` case study is the plugin exercising itself end to end, warts and all:
 
+![Agentic Sales Intelligence Platform — Azure reference architecture, v3](examples/agentic-sales-intelligence/preview-v3.png)
+
+*Rendered directly from `v3-final.drawio` — 32 nodes, 8 zones, official azure2 icons, `routing: "libavoid"` connectors. Open the `.drawio` file yourself to confirm every shape is still natively editable, not a flattened export.*
+
 | | v1 | v2 | v3 (final) |
 |---|---|---|---|
 | Connectors | 41 | 41 | **34** (-17%) |
@@ -89,7 +93,7 @@ azure-diagrams/
 |---|---|
 | `v1.drawio` | First render from the supplied Mermaid — 32 nodes, 41 connectors, 8 zones. |
 | `v2.drawio` | Fixed legend overlap and detangled the Orchestration ↔ Model Layer connector fan. |
-| `v3-final.drawio` | Decluttered on request — cross-cutting and duplicate edges removed, 41 → 34 connectors (-17%), rendered with `routing: "libavoid"`. |
+| `v3-final.drawio` / `preview-v3.png` | Decluttered on request — cross-cutting and duplicate edges removed, 41 → 34 connectors (-17%), rendered with `routing: "libavoid"`. |
 
 Open any file directly in [draw.io](https://app.diagrams.net) or the desktop app.
 
