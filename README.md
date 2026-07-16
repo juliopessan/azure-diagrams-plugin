@@ -41,16 +41,16 @@ The `examples/agentic-sales-intelligence/` case study is the plugin exercising i
 
 *Rendered directly from `agentic-sales-intelligence.drawio` — 32 nodes, 8 zones, official azure2 icons, `routing: "libavoid"` connectors. Open the `.drawio` file yourself to confirm every shape is still natively editable, not a flattened export.*
 
-| | v1 | v2 | v3 (final) |
-|---|---|---|---|
-| Connectors | 41 | 41 | **34** (-17%) |
-| What changed | First render from the supplied Mermaid | Fixed legend overlap, detangled the Model Layer connector fan | Removed cross-cutting and duplicate edges on explicit user request; rendered with `routing: "libavoid"` |
+| Metric | First render | Final (shipped) |
+|---|---|---|
+| Connectors | 41 | **34** (-17%) |
+| Legend & routing | Overlapping legend labels, tangled Model Layer connector fan | Clean legend, `routing: "libavoid"` obstacle-avoiding paths |
 
-No connector was removed by guesswork — each revision was a direct response to a visual defect the user actually flagged, and each version still renders clean through the same validation gate. That's the evidence this plugin's claims are built on, not a demo cherry-picked to look good.
+No connector was removed by guesswork — every change was a direct response to a visual defect flagged during review, and the result still renders clean through the same validation gate. Only this final, validated architecture ships in `examples/`; the full before/after history is recorded in [CHANGELOG.md](CHANGELOG.md). That's the evidence this plugin's claims are built on, not a demo cherry-picked to look good.
 
 ### Where this is going
 
-Version 0.1.0 is the technical foundation: plugin packaging, the `azure-diagram` Skill, official MCP integration, and one fully iterated reference architecture. The next milestones — laid out in `docs/Azure-Architecture-Assistant-Claude-Edition.docx` — are a controlled pilot with real architects and a real baseline, then a public release path so any team can install this as a shared capability rather than a personal script. Read the full submission document for the complete use case, KPI framework, risk assessment and roadmap.
+Version 0.1.0 is the technical foundation: plugin packaging, the `azure-diagram` Skill, official MCP integration, and one fully validated reference architecture. The next milestones — laid out in `docs/Azure-Architecture-Assistant-Claude-Edition.docx` — are a controlled pilot with real architects and a real baseline, then a public release path so any team can install this as a shared capability rather than a personal script. Read the full submission document for the complete use case, KPI framework, risk assessment and roadmap.
 
 ---
 
@@ -78,7 +78,7 @@ azure-diagrams/
 ├── .claude-plugin/plugin.json   # plugin manifest
 ├── .mcp.json                    # official draw.io MCP endpoint
 ├── skills/azure-diagram/        # the Skill: design system, layout rules, quality gates
-├── examples/                    # end-to-end reference architecture, iterated v1 → v3
+├── examples/                    # final, validated end-to-end reference architecture
 │   └── agentic-sales-intelligence/
 ├── docs/                        # project submission document (Claude edition)
 ├── CHANGELOG.md
