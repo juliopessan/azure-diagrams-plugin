@@ -4,6 +4,7 @@
 
 [![Version](https://img.shields.io/badge/version-0.1.0-blue)](CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Repo](https://img.shields.io/badge/github-juliopessan%2Fazure--diagrams--plugin-181717?logo=github)](https://github.com/juliopessan/azure-diagrams-plugin)
 
 ## What it does
 
@@ -47,6 +48,14 @@ azure-diagrams/
 | `v3-final.drawio` | Decluttered on request — cross-cutting and duplicate edges removed, 41 → 34 connectors (-17%), rendered with `routing: "libavoid"`. |
 
 Open any file directly in [draw.io](https://app.diagrams.net) or the desktop app.
+
+## Install
+
+```bash
+git clone https://github.com/juliopessan/azure-diagrams-plugin.git
+```
+
+Then enable it as a Claude plugin (Cowork mode or Claude Code) pointing at the cloned folder — it ships its own `.mcp.json` wiring the official draw.io MCP endpoint, so no extra server setup is needed.
 
 ## Requirements
 

@@ -5,5 +5,10 @@
   "author": {
     "name": "Julio Pessan"
   },
+  "homepage": "https://github.com/juliopessan/azure-diagrams-plugin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juliopessan/azure-diagrams-plugin.git"
+  },
   "keywords": ["azure", "drawio", "architecture", "diagrams", "mermaid", "powerpoint"]
 }
