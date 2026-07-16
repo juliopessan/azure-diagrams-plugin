@@ -75,4 +75,4 @@ Before delivering, self-score each category and keep optimizing until ALL are 10
 
 ## Reference implementation
 
-Working example with all rules applied: `azure-diagrams/email-triage-copilot.drawio` in the juliopessan repo (plus `DIAGRAM-RULES.md` and `preview.html` there).
+See `examples/agentic-sales-intelligence/` in this repo for a working example with all rules applied.
