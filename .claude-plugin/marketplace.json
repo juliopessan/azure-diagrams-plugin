@@ -1,0 +1,11 @@
+{
+  "name": "juliopessan",
+  "owner": { "name": "Julio Pessan" },
+  "plugins": [
+    {
+      "name": "azure-diagrams",
+      "source": "./",
+      "description": "Governed Mermaid-to-draw.io generation for executive-grade Microsoft Azure architecture diagrams (official icons, 16:9, validated via the official draw.io MCP)."
+    }
+  ]
+}
