@@ -106,7 +106,7 @@ Then enable it as a Claude plugin (Cowork mode or Claude Code) pointing at the c
 ## Requirements
 
 - Claude Desktop (Cowork mode) or Claude Code with plugin support.
-- Internet access to `mcp.draw.io` (diagram rendering/validation) and `app.diagrams.net` (icon asset loading).
+- **Network access to `mcp.draw.io` and `app.diagrams.net` is required.** The Skill validates and renders diagrams through the official draw.io MCP endpoint (`https://mcp.draw.io/mcp`) and resolves official icons by fetching them from `app.diagrams.net`. If your network blocks either domain (corporate proxy/firewall), diagram generation and validation will fail — check with your network/IT team before rolling this out to a team.
 
 ## Project submission
 
