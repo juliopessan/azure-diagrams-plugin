@@ -2,7 +2,7 @@
 
 **Azure Architecture Assistant** — turn Mermaid definitions or plain-language architecture descriptions into presentation-ready, editable draw.io diagrams with official Microsoft Azure and Power Platform icons, generated and refined conversationally inside Claude.
 
-[![Version](https://img.shields.io/badge/version-0.1.0-blue)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-0.2.0-blue)](CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Repo](https://img.shields.io/badge/github-juliopessan%2Fazure--diagrams--plugin-181717?logo=github)](https://github.com/juliopessan/azure-diagrams-plugin)
 
@@ -69,6 +69,16 @@ Because generation happens inside the conversation, revisions are conversational
 - *"Render this with cleaner obstacle-avoiding routing."*
 
 Claude regenerates the XML, re-renders it through `create_diagram`, and reports exactly what changed.
+
+## Rule codes and mode selection (v0.2.0)
+
+Two additions on top of the same pipeline and visual style — nothing about how diagrams look changed, only how the Skill self-checks and reports on them:
+
+- **`AZD-xxx` rule codes** — every rule in the design system has a stable diagnostic code (`AZD-0xx` pipeline/setup · `1xx` canvas & layers · `2xx` visual style · `3xx` anti-overlap, e.g. `AZD-301` = arrow crosses text · `4xx` icons · `5xx` layout & narrative · `6xx` language & legend). When Claude self-corrects a diagram, it cites the code instead of describing the fix in prose — so a delivery can say *"0 open AZD violations"* instead of a vague "looks good."
+- **Explicit mode selection** — before laying anything out, Claude names which mode governs the diagram: **Flowchart** (decision/status flows — approval, triage, routing) or **Architecture** (system topology — service/data/integration layers), each with its own connector color palette. Sequence, Data Flow and Lifecycle modes are on the roadmap but not implemented; the Skill says so rather than faking one.
+- **Audit without regeneration** — an already-shipped `.drawio` can be re-validated against the current rule set (MCP structural check + full `AZD-xxx` pass) without touching a single node. Verified on the `Legal Document Automation` reference: 0 open violations against v0.2.0 rules, despite being generated under v0.1.0.
+
+Full rule table lives in the Skill's `DIAGRAM-RULES.md` reference; see [CHANGELOG.md](CHANGELOG.md) for the complete v0.2.0 entry.
 
 ## Repository layout
 

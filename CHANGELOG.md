@@ -2,6 +2,17 @@
 
 All notable changes to this project are documented here.
 
+## [0.2.0] — 2026-07-30
+
+### Added
+- **`AZD-xxx` rule-code taxonomy** — every design-system rule now has a stable diagnostic code (`AZD-0xx` pipeline/setup, `1xx` canvas & layers, `2xx` visual style, `3xx` anti-overlap, `4xx` icons, `5xx` layout & narrative, `6xx` language & legend). Self-correction and review cite the code instead of free-form prose (e.g. *"fixed AZD-301: label overlapped the main arrow — re-anchored"*), making "0 open violations" a reportable, auditable claim instead of a vibe.
+- **Explicit mode selection** — before narrative reconstruction, the Skill now declares which of the two implemented modes applies (**Flowchart** for decision/status flows, **Architecture** for system topology) and states it in one line before composing the XML. Sequence, Data Flow and Lifecycle modes are documented as roadmap — not implemented — so the Skill discloses the limitation instead of attempting an unsupported diagram type.
+- **Non-destructive audit workflow** — an existing `.drawio` can now be re-validated against the current rule set (structural check via `create_diagram` + a full `AZD-xxx` pass) without regenerating it, producing a compliance report. Verified on the `Legal Document Automation` reference diagram: 0 open violations, no changes required.
+
+### Notes
+- Purely additive: canvas, layers, visual style, icon catalog and every previously shipped diagram are unchanged. Only self-review and diagnostics got more precise.
+- Ideas partly inspired by [archify](https://github.com/tt-a1i/archify) (named validation rules, mode-first authoring) — evaluated and adapted, not adopted wholesale (its icon-less/dark-theme visual language was intentionally not carried over; official Microsoft iconography remains a hard requirement here).
+
 ## [0.1.0] — 2026-07-16
 
 ### Added
