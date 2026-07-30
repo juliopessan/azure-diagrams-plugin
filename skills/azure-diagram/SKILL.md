@@ -11,6 +11,14 @@ Produce a native, editable `.drawio` file in Microsoft Architecture Center style
 
 Architecture diagrams are communication artifacts: the objective is to EXPLAIN a solution, not to reproduce Mermaid. When visual fidelity conflicts with Mermaid positioning, readability always wins. A CIO should understand the architecture within five seconds by following the visual flow alone. The result must look manually designed by a Principal Azure Architect for the Azure Architecture Center — minimal, technical, quiet, precise, balanced.
 
+## Rule codes (AZD-xxx)
+
+Every self-correction or review references a code, not just prose — makes "what changed between versions" and "0 open violations" reportable. Full table with descriptions lives in `DIAGRAM-RULES.md` (canonical). Ranges: `AZD-0xx` pipeline/setup · `AZD-1xx` canvas & layers · `AZD-2xx` visual style · `AZD-3xx` anti-overlap (301 = arrow crosses text, the most common) · `AZD-4xx` icons (401 = unvalidated icon, 402 = mscae usage) · `AZD-5xx` layout & narrative (501 = layout copied Mermaid syntax instead of business narrative, 502 = >6 components/region, 503 = whitespace <40%) · `AZD-6xx` language & legend. Cite codes when fixing smells (e.g. "fixed AZD-301: label overlapped the main arrow — re-anchored").
+
+## Mode selection (do this first)
+
+Before narrative reconstruction, classify the scenario into a mode — this decides the connector color palette (see Visual style below) and zone pattern. State it in one line before composing the XML (e.g. "Mode: Architecture — layered service system"). Implemented modes: **Flowchart** (decision/status flows: approval, triage, routing with Yes/No branches — gray/red/orange/purple-dashed palette) and **Architecture** (system topology: service/data/integration layers — gray/teal/purple/orange/gray-dashed palette). Roadmap, not yet implemented: Sequence (temporal API interactions), Data Flow (pipelines/lineage), Lifecycle (states/transitions) — do not attempt these; fall back to Flowchart or Architecture and note the limitation to the user. A diagram may combine both implemented modes when a business process has an architectural "core" (e.g. a decision flow whose AI/data nodes use the architecture palette) — the dominant mode still governs the overall layout.
+
 ## Pipeline
 
 0. **Narrative reconstruction (before drawing anything)** — understand the business process → identify the primary narrative → separate supporting processes → separate exception handling → separate operational concerns → only then create the layout. Common narratives: Email Processing (Reception → Classification → Decision → Routing → Human Review → Audit); RAG (Query → Retrieval → Prompt Assembly → LLM → Response); Agentic AI (User → Orchestrator → Agents → Tools → Aggregation → Response); Data Platform (Sources → Ingestion → Processing → Storage → Analytics → Consumption); API Platform (Consumer → Gateway → Auth → Services → Data).
@@ -75,4 +83,4 @@ Before delivering, self-score each category and keep optimizing until ALL are 10
 
 ## Reference implementation
 
-See `examples/agentic-sales-intelligence/` in this repo for a working example with all rules applied.
+Working example with all rules applied: `azure-diagrams/email-triage-copilot.drawio` in the juliopessan repo (plus `DIAGRAM-RULES.md` and `preview.html` there).

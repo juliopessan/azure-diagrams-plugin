@@ -1,6 +1,6 @@
 {
   "name": "azure-diagrams",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Generate 16:9 draw.io architecture and flow diagrams with official Azure and Power Platform icons from Mermaid or plain-language descriptions, validated against the official draw.io MCP and a Microsoft Architecture Center design system.",
   "author": {
     "name": "Julio Pessan"
@@ -10,5 +10,12 @@
     "type": "git",
     "url": "https://github.com/juliopessan/azure-diagrams-plugin.git"
   },
-  "keywords": ["azure", "drawio", "architecture", "diagrams", "mermaid", "powerpoint"]
+  "keywords": [
+    "azure",
+    "drawio",
+    "architecture",
+    "diagrams",
+    "mermaid",
+    "powerpoint"
+  ]
 }
