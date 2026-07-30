@@ -13,6 +13,17 @@ All notable changes to this project are documented here.
 - Purely additive: canvas, layers, visual style, icon catalog and every previously shipped diagram are unchanged. Only self-review and diagnostics got more precise.
 - Ideas partly inspired by [archify](https://github.com/tt-a1i/archify) (named validation rules, mode-first authoring) — evaluated and adapted, not adopted wholesale (its icon-less/dark-theme visual language was intentionally not carried over; official Microsoft iconography remains a hard requirement here).
 
+### Fixed — `examples/agentic-sales-intelligence` audited against v0.2.0 (2026-07-30)
+
+Running the new AZD-xxx checklist against the shipped reference example (built in an earlier Cowork session, before the rule set existed) surfaced three real defects it did not previously catch:
+
+- **`AZD-101`** — `mxGraphModel` had no explicit `background="#FFFFFF"`; the example rendered dark in some viewers. Added.
+- **`AZD-201`** — all 34 connectors shared one flat gray/dashed style regardless of meaning, instead of the documented Architecture-mode palette. Recolored: 6 gray `#333333` (business flow: user → UI → gateway → app), 22 teal `#0E7C7B` (data/AI: app/orchestrator/agents/models, functions → data stores), 6 orange `#E8871A` (ingestion/eventing: sources → Data Factory/Functions, intent → Service Bus). Switched from dashed to solid per the same rule.
+- **`AZD-602`** — all 15 legend entries had `spacingLeft=6` against an 18px icon, so every icon overlapped its own label's first letter. Corrected to `spacingLeft=24`.
+- **`AZD-001`** — no companion Mermaid source existed for this example. Added `agentic-sales-intelligence.mmd`, reconstructed to match the shipped topology exactly (39 nodes, 34 edges).
+
+`preview.png` regenerated to reflect all four fixes. Zone geometry was independently re-verified with no overlaps found (`Agent Orchestration` right edge at x=1580, `Model Layer` left edge at x=1620 — 40px clear). One cosmetic note: the "Model Layer" zone title renders with slightly soft edges in this specific headless-capture pipeline versus the other seven zone titles; the underlying geometry and style are identical to the others and the text is unaffected in the interactive draw.io viewer — flagged for future investigation, not blocking.
+
 ## [0.1.0] — 2026-07-16
 
 ### Added

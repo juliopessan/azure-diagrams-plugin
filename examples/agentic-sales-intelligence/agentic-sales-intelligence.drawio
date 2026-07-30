@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="claude">
   <diagram id="agentic-sales-v3" name="Agentic Sales Intelligence Architecture">
-    <mxGraphModel dx="2784" dy="1528" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="1240" math="0" shadow="0">
+    <mxGraphModel dx="2784" dy="1528" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="1240" math="0" shadow="0" background="#FFFFFF">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -30,106 +30,106 @@
           <mxGeometry height="380" width="540" x="1620" y="560" as="geometry" />
         </mxCell>
         <mxCell id="layerConn" parent="1" style="" value="Connectors" />
-        <mxCell id="e1" edge="1" parent="layerConn" source="user" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="ui">
+        <mxCell id="e1" edge="1" parent="layerConn" source="user" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="ui">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e2" edge="1" parent="layerConn" source="validator" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="ui">
+        <mxCell id="e2" edge="1" parent="layerConn" source="validator" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="ui">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e3" edge="1" parent="layerConn" source="reviewer" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="ui">
+        <mxCell id="e3" edge="1" parent="layerConn" source="reviewer" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="ui">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e4" edge="1" parent="layerConn" source="ui" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="apim">
+        <mxCell id="e4" edge="1" parent="layerConn" source="ui" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="apim">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e5" edge="1" parent="layerConn" source="apim" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="app">
+        <mxCell id="e5" edge="1" parent="layerConn" source="apim" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="app">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e6" edge="1" parent="layerConn" source="app" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="intent">
+        <mxCell id="e6" edge="1" parent="layerConn" source="app" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="intent">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e7" edge="1" parent="layerConn" source="intent" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="orchestrator">
+        <mxCell id="e7" edge="1" parent="layerConn" source="intent" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#0E7C7B;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="orchestrator">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e8" edge="1" parent="layerConn" source="intent" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="bus">
+        <mxCell id="e8" edge="1" parent="layerConn" source="intent" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#E8871A;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="bus">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e9" edge="1" parent="layerConn" source="app" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="reportsvc">
+        <mxCell id="e9" edge="1" parent="layerConn" source="app" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#0E7C7B;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="reportsvc">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e10" edge="1" parent="layerConn" source="app" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=0.3;exitY=1;exitDx=0;exitDy=0;entryX=0.3;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="sql">
+        <mxCell id="e10" edge="1" parent="layerConn" source="app" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#0E7C7B;strokeWidth=1.5;exitX=0.3;exitY=1;exitDx=0;exitDy=0;entryX=0.3;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="sql">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e11" edge="1" parent="layerConn" source="app" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=0.3;exitY=1;exitDx=0;exitDy=0;entryX=0.3;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="cosmos">
+        <mxCell id="e11" edge="1" parent="layerConn" source="app" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#0E7C7B;strokeWidth=1.5;exitX=0.3;exitY=1;exitDx=0;exitDy=0;entryX=0.3;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="cosmos">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e12" edge="1" parent="layerConn" source="app" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=0.3;exitY=1;exitDx=0;exitDy=0;entryX=0.3;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="search">
+        <mxCell id="e12" edge="1" parent="layerConn" source="app" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#0E7C7B;strokeWidth=1.5;exitX=0.3;exitY=1;exitDx=0;exitDy=0;entryX=0.3;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="search">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e13" edge="1" parent="layerConn" source="orchestrator" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="opp">
+        <mxCell id="e13" edge="1" parent="layerConn" source="orchestrator" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#0E7C7B;strokeWidth=1.5;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="opp">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e14" edge="1" parent="layerConn" source="orchestrator" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="partner">
+        <mxCell id="e14" edge="1" parent="layerConn" source="orchestrator" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#0E7C7B;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="partner">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e15" edge="1" parent="layerConn" source="orchestrator" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="scoring">
+        <mxCell id="e15" edge="1" parent="layerConn" source="orchestrator" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#0E7C7B;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="scoring">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e16" edge="1" parent="layerConn" source="orchestrator" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="planning">
+        <mxCell id="e16" edge="1" parent="layerConn" source="orchestrator" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#0E7C7B;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="planning">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e17" edge="1" parent="layerConn" source="orchestrator" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="cxo">
+        <mxCell id="e17" edge="1" parent="layerConn" source="orchestrator" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#0E7C7B;strokeWidth=1.5;dashed=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="cxo">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e18" edge="1" parent="layerConn" source="orchestrator" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="safety">
+        <mxCell id="e18" edge="1" parent="layerConn" source="orchestrator" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#0E7C7B;strokeWidth=1.5;dashed=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="safety">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e19" edge="1" parent="layerConn" source="opp" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="modelgw">
+        <mxCell id="e19" edge="1" parent="layerConn" source="opp" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#0E7C7B;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="modelgw">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e20" edge="1" parent="layerConn" source="partner" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="modelgw">
+        <mxCell id="e20" edge="1" parent="layerConn" source="partner" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#0E7C7B;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="modelgw">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e21" edge="1" parent="layerConn" source="scoring" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="modelgw">
+        <mxCell id="e21" edge="1" parent="layerConn" source="scoring" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#0E7C7B;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="modelgw">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e22" edge="1" parent="layerConn" source="planning" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="modelgw">
+        <mxCell id="e22" edge="1" parent="layerConn" source="planning" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#0E7C7B;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="modelgw">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e23" edge="1" parent="layerConn" source="cxo" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="modelgw">
+        <mxCell id="e23" edge="1" parent="layerConn" source="cxo" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#0E7C7B;strokeWidth=1.5;dashed=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="modelgw">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e24" edge="1" parent="layerConn" source="modelgw" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="primary">
+        <mxCell id="e24" edge="1" parent="layerConn" source="modelgw" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#0E7C7B;strokeWidth=1.5;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="primary">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e25" edge="1" parent="layerConn" source="modelgw" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="secondary">
+        <mxCell id="e25" edge="1" parent="layerConn" source="modelgw" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#0E7C7B;strokeWidth=1.5;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="secondary">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e26" edge="1" parent="layerConn" source="modelgw" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="lowcost">
+        <mxCell id="e26" edge="1" parent="layerConn" source="modelgw" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#0E7C7B;strokeWidth=1.5;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="lowcost">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e27" edge="1" parent="layerConn" source="src1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="adf">
+        <mxCell id="e27" edge="1" parent="layerConn" source="src1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#E8871A;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="adf">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e28" edge="1" parent="layerConn" source="src2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="adf">
+        <mxCell id="e28" edge="1" parent="layerConn" source="src2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#E8871A;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="adf">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e29" edge="1" parent="layerConn" source="files" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="func">
+        <mxCell id="e29" edge="1" parent="layerConn" source="files" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#E8871A;strokeWidth=1.5;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="func">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e30" edge="1" parent="layerConn" source="adf" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="func">
+        <mxCell id="e30" edge="1" parent="layerConn" source="adf" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#E8871A;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="func">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e31" edge="1" parent="layerConn" source="func" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="lake">
+        <mxCell id="e31" edge="1" parent="layerConn" source="func" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#0E7C7B;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="lake">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e32" edge="1" parent="layerConn" source="func" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="cosmos">
+        <mxCell id="e32" edge="1" parent="layerConn" source="func" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#0E7C7B;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="cosmos">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e33" edge="1" parent="layerConn" source="func" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="search">
+        <mxCell id="e33" edge="1" parent="layerConn" source="func" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#0E7C7B;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="search">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e34" edge="1" parent="layerConn" source="func" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#666666;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=1;startSize=0;endSize=0;shadow=0;curved=0;fillColor=#f5f5f5;" target="bus">
+        <mxCell id="e34" edge="1" parent="layerConn" source="func" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#E8871A;strokeWidth=1.5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jettySize=auto;orthogonalLoop=1;flowAnimation=0;dashed=0;startSize=0;endSize=0;shadow=0;curved=0;endArrow=block;endFill=1;" target="bus">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="layerNodes" parent="1" style="" value="Nodes" />
@@ -239,49 +239,49 @@
         <mxCell id="legendBox" parent="layerAnno" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#CCCCCC;dashed=1;dashPattern=1 2;" value="" vertex="1">
           <mxGeometry height="70" width="2120" x="40" y="975" as="geometry" />
         </mxCell>
-        <mxCell id="legend_Users" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=6;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/identity/Users.svg;rounded=1;" value="User / Human Role" vertex="1">
+        <mxCell id="legend_Users" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/identity/Users.svg;rounded=1;" value="User / Human Role" vertex="1">
           <mxGeometry height="30" width="140" x="55" y="995" as="geometry" />
         </mxCell>
-        <mxCell id="legend_API_Management_Services" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=6;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/app_services/API_Management_Services.svg;rounded=1;" value="API Management" vertex="1">
+        <mxCell id="legend_API_Management_Services" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/app_services/API_Management_Services.svg;rounded=1;" value="API Management" vertex="1">
           <mxGeometry height="30" width="140" x="203" y="995" as="geometry" />
         </mxCell>
-        <mxCell id="legend_AI_Studio" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=6;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/ai_machine_learning/AI_Studio.svg;rounded=1;" value="Foundry Agent" vertex="1">
+        <mxCell id="legend_AI_Studio" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/ai_machine_learning/AI_Studio.svg;rounded=1;" value="Foundry Agent" vertex="1">
           <mxGeometry height="30" width="140" x="351" y="995" as="geometry" />
         </mxCell>
-        <mxCell id="legend_Azure_OpenAI" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=6;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/ai_machine_learning/Azure_OpenAI.svg;rounded=1;" value="Azure OpenAI Model" vertex="1">
+        <mxCell id="legend_Azure_OpenAI" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/ai_machine_learning/Azure_OpenAI.svg;rounded=1;" value="Azure OpenAI Model" vertex="1">
           <mxGeometry height="30" width="140" x="499" y="995" as="geometry" />
         </mxCell>
-        <mxCell id="legend_Content_Safety" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=6;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/ai_machine_learning/Content_Safety.svg;rounded=1;" value="Content Safety" vertex="1">
+        <mxCell id="legend_Content_Safety" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/ai_machine_learning/Content_Safety.svg;rounded=1;" value="Content Safety" vertex="1">
           <mxGeometry height="30" width="140" x="647" y="995" as="geometry" />
         </mxCell>
-        <mxCell id="legend_Azure_Cosmos_DB" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=6;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/databases/Azure_Cosmos_DB.svg;rounded=1;" value="Cosmos DB" vertex="1">
+        <mxCell id="legend_Azure_Cosmos_DB" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/databases/Azure_Cosmos_DB.svg;rounded=1;" value="Cosmos DB" vertex="1">
           <mxGeometry height="30" width="140" x="795" y="995" as="geometry" />
         </mxCell>
-        <mxCell id="legend_Azure_SQL" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=6;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/databases/Azure_SQL.svg;rounded=1;" value="Azure SQL" vertex="1">
+        <mxCell id="legend_Azure_SQL" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/databases/Azure_SQL.svg;rounded=1;" value="Azure SQL" vertex="1">
           <mxGeometry height="30" width="140" x="943" y="995" as="geometry" />
         </mxCell>
-        <mxCell id="legend_Data_Lake_Storage_Gen1" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=6;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/storage/Data_Lake_Storage_Gen1.svg;rounded=1;" value="ADLS Gen2 *" vertex="1">
+        <mxCell id="legend_Data_Lake_Storage_Gen1" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/storage/Data_Lake_Storage_Gen1.svg;rounded=1;" value="ADLS Gen2 *" vertex="1">
           <mxGeometry height="30" width="140" x="1091" y="995" as="geometry" />
         </mxCell>
-        <mxCell id="legend_Search_Services" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=6;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/app_services/Search_Services.svg;rounded=1;" value="Azure AI Search" vertex="1">
+        <mxCell id="legend_Search_Services" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/app_services/Search_Services.svg;rounded=1;" value="Azure AI Search" vertex="1">
           <mxGeometry height="30" width="140" x="1239" y="995" as="geometry" />
         </mxCell>
-        <mxCell id="legend_Data_Factory" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=6;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/databases/Data_Factory.svg;rounded=1;" value="Data Factory" vertex="1">
+        <mxCell id="legend_Data_Factory" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/databases/Data_Factory.svg;rounded=1;" value="Data Factory" vertex="1">
           <mxGeometry height="30" width="140" x="1387" y="995" as="geometry" />
         </mxCell>
-        <mxCell id="legend_Function_Apps" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=6;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/compute/Function_Apps.svg;rounded=1;" value="Azure Functions" vertex="1">
+        <mxCell id="legend_Function_Apps" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/compute/Function_Apps.svg;rounded=1;" value="Azure Functions" vertex="1">
           <mxGeometry height="30" width="140" x="1535" y="995" as="geometry" />
         </mxCell>
-        <mxCell id="legend_Service_Bus" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=6;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/integration/Service_Bus.svg;rounded=1;" value="Service Bus" vertex="1">
+        <mxCell id="legend_Service_Bus" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/integration/Service_Bus.svg;rounded=1;" value="Service Bus" vertex="1">
           <mxGeometry height="30" width="140" x="1683" y="995" as="geometry" />
         </mxCell>
-        <mxCell id="legend_Azure_Active_Directory" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=6;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/identity/Azure_Active_Directory.svg;rounded=1;" value="Entra ID" vertex="1">
+        <mxCell id="legend_Azure_Active_Directory" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/identity/Azure_Active_Directory.svg;rounded=1;" value="Entra ID" vertex="1">
           <mxGeometry height="30" width="140" x="1831" y="995" as="geometry" />
         </mxCell>
-        <mxCell id="legend_Key_Vaults" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=6;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/security/Key_Vaults.svg;rounded=1;" value="Key Vault" vertex="1">
+        <mxCell id="legend_Key_Vaults" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/security/Key_Vaults.svg;rounded=1;" value="Key Vault" vertex="1">
           <mxGeometry height="30" width="140" x="1979" y="995" as="geometry" />
         </mxCell>
-        <mxCell id="legend_Application_Insights" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=6;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/devops/Application_Insights.svg;rounded=1;" value="Azure Monitor" vertex="1">
+        <mxCell id="legend_Application_Insights" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/devops/Application_Insights.svg;rounded=1;" value="Azure Monitor" vertex="1">
           <mxGeometry height="30" width="140" x="2127" y="995" as="geometry" />
         </mxCell>
       </root>

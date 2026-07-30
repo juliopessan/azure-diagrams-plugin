@@ -1,0 +1,79 @@
+flowchart LR
+
+    user["Internal User"]
+    validator["Validator"]
+    reviewer["Governance Reviewer"]
+
+    ui["Web App React / Next.js"]
+    apim["Azure API Management"]
+
+    app["Core Application Services ASP.NET Core .NET 8"]
+    intent["Intent Classifier"]
+    reportsvc["Report Service JSON to UI/PDF"]
+
+    orchestrator["Agent Orchestrator Foundry + CODE"]
+    opp["Opportunity Agent"]
+    partner["Partner Matching Agent"]
+    scoring["Scoring Agent"]
+    planning["Planning Agent"]
+    cxo["CXO Agent (Future)"]
+    safety["Content Safety"]
+
+    modelgw["Model Router"]
+    primary["Primary Model"]
+    secondary["Secondary Model"]
+    lowcost["Low Cost Model"]
+
+    src1["Internal Sources"]
+    src2["External Sources"]
+    files["Uploaded Files"]
+    adf["Data Factory"]
+    func["Azure Functions"]
+    bus["Service Bus"]
+
+    cosmos["Cosmos DB"]
+    sql["Azure SQL"]
+    lake["ADLS Gen2"]
+    search["Azure AI Search"]
+
+    entra["Entra ID"]
+    kv["Key Vault"]
+    obs["Azure Monitor + App Insights"]
+
+    user --> ui
+    validator --> ui
+    reviewer --> ui
+    ui --> apim
+    apim --> app
+    app --> intent
+    intent --> orchestrator
+    intent --> bus
+    app --> reportsvc
+    app --> sql
+    app --> cosmos
+    app --> search
+
+    orchestrator --> opp
+    orchestrator --> partner
+    orchestrator --> scoring
+    orchestrator --> planning
+    orchestrator --> cxo
+    orchestrator --> safety
+
+    opp --> modelgw
+    partner --> modelgw
+    scoring --> modelgw
+    planning --> modelgw
+    cxo --> modelgw
+    modelgw --> primary
+    modelgw --> secondary
+    modelgw --> lowcost
+
+    src1 --> adf
+    src2 --> adf
+    files --> func
+    adf --> func
+    func --> lake
+    func --> cosmos
+    func --> search
+    func --> bus
