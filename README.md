@@ -6,6 +6,8 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Repo](https://img.shields.io/badge/github-juliopessan%2Fazure--diagrams--plugin-181717?logo=github)](https://github.com/juliopessan/azure-diagrams-plugin)
 
+![Azure Architecture Copilot — Mermaid to draw.io in one conversation](assets/hero.png)
+
 ## The gap this closes
 
 
