@@ -1,0 +1,45 @@
+flowchart TD
+
+subgraph AzureTenant
+  subgraph UserZone
+    browser["Desktop Browser"]
+  end
+
+  subgraph Identity
+    entra["Microsoft Entra ID"]
+  end
+
+  subgraph Platform
+    ui["Solution UI Web App"]
+    apim["API Management"]
+    app["ASP.NET Core App Service"]
+    logic["Logic Apps Standard"]
+    sql["Azure SQL Database"]
+    blob["Blob Storage"]
+    search["Azure AI Search"]
+    kv["Azure Key Vault"]
+    mon["Azure Monitor and App Insights"]
+    aoai["Azure OpenAI"]
+  end
+
+  subgraph EnterpriseAdapters
+    crm["CRM"]
+    repo["Document Repository"]
+    appr["Approval Platform"]
+    pbi["Power BI"]
+  end
+end
+
+browser --> entra
+browser --> ui
+ui --> apim
+apim --> app
+app --> logic
+app --> sql
+app --> blob
+app --> search
+app --> kv
+app --> aoai
+app --> mon
+logic --> appr
+app --> repo
