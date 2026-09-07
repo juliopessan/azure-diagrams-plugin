@@ -57,12 +57,13 @@ than anecdotal.
 |---|---|---|
 | `AZD-201` | Connectors use the palette of the declared mode, not one flat style for everything | Blocking |
 | `AZD-202` | Zones are unfilled with a dotted gray border (`dashed=1;dashPattern=1 2;strokeColor=#999999`), title top-center at fontSize 13 | Advisory |
-| `AZD-203` | Service nodes use the standard card: `rounded=1;arcSize=12`, 130×96, 40px icon top-center, label inside the same cell | Blocking |
+| `AZD-203` | Service nodes use the standard card **format**: `rounded=1;arcSize=12`, 40px icon top-center, label inside the same cell | Blocking |
 | `AZD-204` | Node border/fill comes from the five semantic pairs (green, blue, purple, orange, red) — no invented colors | Advisory |
 | `AZD-205` | Edges are orthogonal at `strokeWidth=1.5` | Advisory |
 | `AZD-206` | Node labels are names, not descriptions — max 3 lines × ~18 characters, official Microsoft terminology | Advisory |
 | `AZD-207` | Icon size is identical across every node | Advisory |
 | `AZD-208` | Title (top-left, fontSize 18 bold) and signature (top-right) are present | Advisory |
+| `AZD-209` | Card size is the 130×96 default. Deviating is allowed only where it encodes hierarchy per `AZD-506`, and the icon size still never changes (`AZD-207`) | Advisory |
 
 ## `AZD-3xx` — Anti-overlap
 
@@ -104,22 +105,63 @@ than anecdotal.
 | `AZD-602` | Legend icons do not overlap their labels (`spacingLeft` must clear the icon width — an 18px icon needs `spacingLeft=24`) | Blocking |
 | `AZD-603` | A legend strip is present and every shipped icon appears in it | Advisory |
 | `AZD-604` | Service names use official Microsoft product naming | Advisory |
+| `AZD-605` | Every legend item sits inside the legend box. Moving the entries without moving the box leaves them floating outside it | Blocking |
 
 ---
 
-## Auditing an existing diagram
+## The delivery gate — run this every time
 
-An already-shipped `.drawio` can be checked against this table **without regenerating
-it** — the audit is non-destructive and produces a compliance report, not a new diagram:
+Not a checklist to read and feel good about: three gates, run in order, on every
+diagram before it is handed over. Each catches a class the others cannot.
 
-1. Re-validate structure by passing the existing `<mxGraphModel>` to `create_diagram`.
-2. Walk the table top to bottom against the file's XML and its rendered output.
-3. Report each finding by code, then fix only what is actually broken.
+**Gate 1 — structure (`AZD-005`).** Pass the `<mxGraphModel>` to the draw.io MCP
+`create_diagram`. Fix everything it reports. This proves the file parses and renders;
+it proves nothing about whether the diagram is any good.
+
+**Gate 2 — mechanics (`audit.py`).** Run the checker next to this file:
+
+```bash
+python3 skills/azure-diagram/audit.py path/to/diagram.drawio
+```
+
+It exits non-zero on any Blocking violation, so it drops straight into CI or a
+pre-commit hook. It reads geometry and style strings, which is exactly where the eye
+is unreliable: a legend entry 67px off the page edge, `spacingLeft` that does not clear
+its own icon, an edge missing its anchors, a zone quietly holding seven services.
+
+**Gate 3 — the eye (`AZD-006`).** Render and look at it. Gates 1 and 2 cannot see
+crossing connectors, a tangled fan, or a diagram that is structurally perfect and still
+unreadable. **If you could not actually look at the render, say so in the delivery
+instead of implying the pass happened.**
+
+Then deliver with the open violations stated, not buried — including the advisories you
+chose to leave open and why.
+
+### Writing checks: two failure modes that have already bitten
+
+Both were found in this repo, by checks that reported clean while missing real defects:
+
+- **Never identify a cell class by id prefix.** A check keyed on `legend_*` silently
+  skipped a diagram whose entries were named `leg1..leg15`, and every one of them had a
+  broken `spacingLeft`. Zones named `z1..z5` instead of `zone1..` were counted as ink
+  and corrupted the whitespace figure. Match on structure — style properties — never on
+  naming convention.
+- **Verify the checker before trusting its output.** The first run of this audit flagged
+  the title and signature as margin violations; they sit in the header band by design.
+  A checker that cries wolf gets ignored, which is worse than no checker. Confirm each
+  finding is real before acting on it or reporting it.
+
+### Auditing an already-shipped diagram
+
+The gate above is non-destructive, so it runs against shipped files without
+regenerating them — it produces a compliance report, not a new diagram.
 
 This is how `examples/agentic-sales-intelligence/` was audited under v0.2.0: the pass
 surfaced four real defects (`AZD-101`, `AZD-201`, `AZD-602`, `AZD-001`) in a diagram
-that had been shipped under v0.1.0, before the rule set existed. All four were fixed and
-the example now sits at 0 open violations.
+shipped under v0.1.0, before the rule set existed. Re-running the mechanical gate in
+v0.2.2 found a fifth it had missed — the last legend entry rendering off the page edge
+(`AZD-105`) — and a matching pair of defects in `examples/solution-platform/`. A rule
+set earns trust by continuing to find things, not by reporting clean.
 
 ## Provenance
 

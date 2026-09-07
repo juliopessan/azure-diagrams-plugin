@@ -128,49 +128,49 @@
         <mxCell id="legendBox" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;dashPattern=1 2;" vertex="1" parent="La">
           <mxGeometry x="40" y="775" width="800" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="leg1" value="Desktop Browser *" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=4;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/azure2/identity/Users.svg;" vertex="1" parent="La">
+        <mxCell id="leg1" value="Desktop Browser *" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=24;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/azure2/identity/Users.svg;" vertex="1" parent="La">
           <mxGeometry x="60" y="788" width="92" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="leg2" value="Microsoft Entra ID" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=4;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/azure2/identity/Azure_Active_Directory.svg;" vertex="1" parent="La">
+        <mxCell id="leg2" value="Microsoft Entra ID" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=24;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/azure2/identity/Azure_Active_Directory.svg;" vertex="1" parent="La">
           <mxGeometry x="155" y="788" width="92" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="leg3" value="App Services" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=4;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/azure2/app_services/App_Services.svg;" vertex="1" parent="La">
+        <mxCell id="leg3" value="App Services" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=24;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/azure2/app_services/App_Services.svg;" vertex="1" parent="La">
           <mxGeometry x="250" y="788" width="92" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="leg4" value="API Management" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=4;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/azure2/app_services/API_Management_Services.svg;" vertex="1" parent="La">
+        <mxCell id="leg4" value="API Management" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=24;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/azure2/app_services/API_Management_Services.svg;" vertex="1" parent="La">
           <mxGeometry x="345" y="788" width="92" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="leg5" value="Logic Apps" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=4;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/azure2/integration/Logic_Apps.svg;" vertex="1" parent="La">
+        <mxCell id="leg5" value="Logic Apps" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=24;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/azure2/integration/Logic_Apps.svg;" vertex="1" parent="La">
           <mxGeometry x="440" y="788" width="92" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="leg6" value="SQL Database" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=4;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/azure2/databases/SQL_Database.svg;" vertex="1" parent="La">
+        <mxCell id="leg6" value="SQL Database" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=24;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/azure2/databases/SQL_Database.svg;" vertex="1" parent="La">
           <mxGeometry x="535" y="788" width="92" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="leg7" value="Storage Accounts" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=4;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/azure2/storage/Storage_Accounts.svg;" vertex="1" parent="La">
+        <mxCell id="leg7" value="Storage Accounts" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=24;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/azure2/storage/Storage_Accounts.svg;" vertex="1" parent="La">
           <mxGeometry x="630" y="788" width="92" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="leg8" value="Azure AI Search" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=4;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/azure2/app_services/Search_Services.svg;" vertex="1" parent="La">
+        <mxCell id="leg8" value="Azure AI Search" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=24;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/azure2/app_services/Search_Services.svg;" vertex="1" parent="La">
           <mxGeometry x="60" y="820" width="92" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="leg9" value="Key Vault" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=4;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/azure2/security/Key_Vaults.svg;" vertex="1" parent="La">
+        <mxCell id="leg9" value="Key Vault" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=24;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/azure2/security/Key_Vaults.svg;" vertex="1" parent="La">
           <mxGeometry x="155" y="820" width="92" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="leg10" value="App Insights" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=4;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/azure2/management_governance/Application_Insights.svg;" vertex="1" parent="La">
+        <mxCell id="leg10" value="App Insights" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=24;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/azure2/management_governance/Application_Insights.svg;" vertex="1" parent="La">
           <mxGeometry x="250" y="820" width="92" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="leg11" value="Azure OpenAI" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=4;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/azure2/ai_machine_learning/Azure_OpenAI.svg;" vertex="1" parent="La">
+        <mxCell id="leg11" value="Azure OpenAI" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=24;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/azure2/ai_machine_learning/Azure_OpenAI.svg;" vertex="1" parent="La">
           <mxGeometry x="345" y="820" width="92" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="leg12" value="Dynamics 365" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=4;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/dynamics365/Dynamics365.svg;" vertex="1" parent="La">
+        <mxCell id="leg12" value="Dynamics 365" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=24;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/dynamics365/Dynamics365.svg;" vertex="1" parent="La">
           <mxGeometry x="440" y="820" width="92" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="leg13" value="SharePoint *" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=4;strokeColor=none;fillColor=none;image=https://icons.diagrams.net/assets/office365/1/Sharepoint.svg;" vertex="1" parent="La">
+        <mxCell id="leg13" value="SharePoint *" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=24;strokeColor=none;fillColor=none;image=https://icons.diagrams.net/assets/office365/1/Sharepoint.svg;" vertex="1" parent="La">
           <mxGeometry x="535" y="820" width="92" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="leg14" value="Power Automate *" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=4;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/azure2/power_platform/PowerAutomate.svg;" vertex="1" parent="La">
+        <mxCell id="leg14" value="Power Automate *" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=24;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/azure2/power_platform/PowerAutomate.svg;" vertex="1" parent="La">
           <mxGeometry x="630" y="820" width="92" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="leg15" value="Power BI" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=4;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/azure2/power_platform/PowerBI.svg;" vertex="1" parent="La">
+        <mxCell id="leg15" value="Power BI" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=9;fontColor=#444444;spacingLeft=24;strokeColor=none;fillColor=none;image=https://app.diagrams.net/img/lib/azure2/power_platform/PowerBI.svg;" vertex="1" parent="La">
           <mxGeometry x="725" y="820" width="92" height="22" as="geometry" />
         </mxCell>
       </root>

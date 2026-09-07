@@ -2,6 +2,24 @@
 
 All notable changes to this project are documented here.
 
+## [0.2.2] — 2026-09-07
+
+### Added
+- **`skills/azure-diagram/audit.py`** — the `AZD` audit as a runnable tool instead of a manual read-through. Checks 14 codes mechanically from geometry and style strings; exits non-zero on any Blocking violation, so it drops into CI or a pre-commit hook.
+- **The delivery gate** (`DIAGRAM-RULES.md`) — three gates that run on every diagram: MCP structural check → `audit.py` → the eye. Written down with what each one *cannot* catch, and the rule that a visual pass which did not happen must be declared, not implied.
+- **`examples/agentic-sales-intelligence/agentic-sales-intelligence-v1-41-connectors.drawio`** — the pre-declutter v1 the v0.1.0 entry describes but never kept. Regenerated from the original 41-edge Mermaid and validated through the MCP. Both files now ship, so the −17% connector claim can be verified by counting rather than trusted.
+- `AZD-209` (card size is the 130×96 default, deviation allowed only where it encodes hierarchy) and `AZD-605` (legend items must sit inside the legend box).
+
+### Fixed
+- **`AZD-602` in `examples/solution-platform`** — all 15 legend entries had `spacingLeft=4` against an 18px icon, so every label began underneath its own icon. This is the same defect the v0.2.0 audit fixed in the other example; it was reintroduced in 0.2.1 and the first checker missed it because it matched legend cells by the id prefix `legend_`, while these are named `leg1..leg15`.
+- **`AZD-105` in `examples/agentic-sales-intelligence`** — the last legend entry sat at x=2127..2267 on a 2200px page, rendering "Azure Monitor" off the page edge and outside the legend box. All 15 entries re-pitched from 148px to 140px.
+- **`AZD-101`/`AZD-105` in `examples/solution-platform`** — no explicit white background, and a legend strip running past the bottom margin.
+- **`AZD-203` contradicted `AZD-506`** — the rule demanded a fixed 130×96 card while `AZD-506` asks for weight variation by role. `AZD-203` now governs the card *format*; size moved to advisory `AZD-209`. Second rule-table contradiction found and fixed after `AZD-102` in 0.2.1; both came from writing a rule stricter than the Skill it documents.
+
+### Notes
+- Both shipped examples now pass with 0 Blocking violations. Two advisories are left open deliberately: the Content Safety card at 110×80 (`AZD-209`, encodes hierarchy) and the Agent Orchestration zone holding 7 components (`AZD-502`).
+- GitHub Pages cannot be enabled from CI: `actions/configure-pages` with `enablement: true` fails as `Resource not accessible by integration`, because the default `GITHUB_TOKEN` may not create a Pages site. The flag was removed and the one manual setting is documented in the README.
+
 ## [0.2.1] — 2026-09-07
 
 Documentation and packaging pass. No change to diagram generation, the visual system, or any shipped `.drawio`.

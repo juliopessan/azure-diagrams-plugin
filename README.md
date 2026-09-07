@@ -2,7 +2,7 @@
 
 **Azure Architecture Assistant** — turn Mermaid definitions or plain-language architecture descriptions into presentation-ready, editable draw.io diagrams with official Microsoft Azure and Power Platform icons, generated and refined conversationally inside Claude.
 
-[![Version](https://img.shields.io/badge/version-0.2.1-blue)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-0.2.2-blue)](CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Repo](https://img.shields.io/badge/github-juliopessan%2Fazure--diagrams--plugin-181717?logo=github)](https://github.com/juliopessan/azure-diagrams-plugin)
 
@@ -84,7 +84,15 @@ Two additions on top of the same pipeline and visual style — nothing about how
 - **Explicit mode selection** — before laying anything out, Claude names which mode governs the diagram: **Flowchart** (decision/status flows — approval, triage, routing) or **Architecture** (system topology — service/data/integration layers), each with its own connector color palette. Sequence, Data Flow and Lifecycle modes are on the roadmap but not implemented; the Skill says so rather than faking one.
 - **Audit without regeneration** — an already-shipped `.drawio` can be re-validated against the current rule set (MCP structural check + full `AZD-xxx` pass) without touching a single node. Run against `examples/agentic-sales-intelligence/` — generated under v0.1.0, before the codes existed — the pass surfaced four real defects (`AZD-101` missing white background, `AZD-201` connectors ignoring the mode palette, `AZD-602` legend icons overlapping their labels, `AZD-001` no companion Mermaid source). All four were fixed; the example now sits at 0 open violations. The audit is worth having precisely because it did *not* come back clean.
 
-Full rule table, severities and the audit workflow: [`skills/azure-diagram/DIAGRAM-RULES.md`](skills/azure-diagram/DIAGRAM-RULES.md). See [CHANGELOG.md](CHANGELOG.md) for the complete v0.2.0 entry.
+Every diagram passes three gates before delivery: the MCP structural check, a mechanical audit, and a human look. The middle one is a real tool, not a checklist:
+
+```bash
+python3 skills/azure-diagram/audit.py examples/*/*.drawio
+```
+
+It verifies 14 `AZD` codes from geometry and style strings and exits non-zero on any Blocking violation. Running it in v0.2.2 found a defect in each shipped example that the manual v0.2.0 audit had missed.
+
+Full rule table, severities and the delivery gate: [`skills/azure-diagram/DIAGRAM-RULES.md`](skills/azure-diagram/DIAGRAM-RULES.md). See [CHANGELOG.md](CHANGELOG.md) for the complete v0.2.0 entry.
 
 ## Repository layout
 
@@ -96,7 +104,8 @@ azure-diagrams-plugin/
 ├── .mcp.json                        # official draw.io MCP endpoint
 ├── skills/azure-diagram/
 │   ├── SKILL.md                     # the Skill: design system, layout rules, quality gates
-│   └── DIAGRAM-RULES.md             # canonical AZD-xxx rule table + audit workflow
+│   ├── DIAGRAM-RULES.md             # canonical AZD-xxx rule table + the delivery gate
+│   └── audit.py                     # mechanical AZD checker (non-zero exit on Blocking)
 ├── examples/                        # validated, re-runnable reference architectures
 │   ├── agentic-sales-intelligence/  # .drawio + .mmd + preview.png
 │   └── solution-platform/           # .drawio + .mmd
@@ -120,6 +129,7 @@ Two validated architectures ship in `examples/`. Each carries the Mermaid source
 |---|---|
 | `agentic-sales-intelligence.drawio` | Final architecture — native, editable draw.io XML. |
 | `agentic-sales-intelligence.mmd` | Mermaid source, reconstructed to match the shipped topology exactly. |
+| `agentic-sales-intelligence-v1-41-connectors.drawio` | The pre-declutter v1, same layout and 41 connectors. Ships so the −17% claim can be counted, not trusted. |
 | `preview.png` | Rendered preview for a quick look before opening the file. |
 
 ### Solution Platform

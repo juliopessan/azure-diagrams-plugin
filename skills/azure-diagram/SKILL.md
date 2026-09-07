@@ -26,7 +26,10 @@ Before narrative reconstruction, classify the scenario into a mode — this deci
 2. **Validate every icon before use** — `curl -s -o /dev/null -w "%{http_code}" https://app.diagrams.net/<path>`; only use paths returning 200. To discover shapes, prefer the draw.io MCP `search_shapes` tool (server `drawio` → https://mcp.draw.io/mcp) before falling back to a proxy icon.
 3. **Compose the XML** following the layout and style rules below.
 4. **Validate with the draw.io MCP** — call `create_diagram` with the `<mxGraphModel>` content (no XML comments allowed). Fix every reported error.
-5. **Verify visually** — render via a local `preview.html` embedding `https://viewer.diagrams.net/js/viewer-static.min.js`, screenshot it, and inspect for overlaps BEFORE delivering. Check that every icon, label and connector is attached to the intended component.
+5. **Run the mechanical audit** — `python3 skills/azure-diagram/audit.py <file>.drawio`. Non-zero exit means a Blocking `AZD` violation is open. This catches what the eye misses: off-page cells, legend spacing/containment, missing edge anchors, zone overcrowding, whitespace.
+6. **Verify visually** — render via a local `preview.html` embedding `https://viewer.diagrams.net/js/viewer-static.min.js`, screenshot it, and inspect for overlaps BEFORE delivering. Check that every icon, label and connector is attached to the intended component. If the render could not actually be viewed, say so in the delivery rather than implying the pass happened.
+
+All three gates run every time — see "The delivery gate" in `DIAGRAM-RULES.md`. Deliver with any open violations stated, including advisories deliberately left open.
 
 ## Canvas & layers (mandatory)
 
