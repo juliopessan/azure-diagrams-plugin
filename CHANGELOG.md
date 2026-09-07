@@ -2,6 +2,20 @@
 
 All notable changes to this project are documented here.
 
+## [0.2.1] — 2026-09-07
+
+Documentation and packaging pass. No change to diagram generation, the visual system, or any shipped `.drawio`.
+
+### Added
+- **`skills/azure-diagram/DIAGRAM-RULES.md`** — the canonical `AZD-xxx` rule table, which both `SKILL.md` and the README had been pointing at since v0.2.0 without it existing in the repo. 33 codes across the seven documented ranges, each with a **Blocking** or **Advisory** severity, plus the non-destructive audit workflow written down as a procedure. Codes already cited in shipped work (`001`, `101`, `201`, `301`, `401`, `402`, `501`, `502`, `503`, `602`) are marked as load-bearing; the rest formalize rules that already existed in prose in `SKILL.md` and gained a code, not new authority.
+- **`docs/index.html`** — a self-contained landing page (single file, no build step, no runtime dependencies) for GitHub Pages. Verified in Chromium: computed bar widths 425px/353px (100%/83%), count-up settling on 41/34, all seven reveal targets reaching `.is-in`, rail and scroll-progress transforms applied, zero `!important`, balanced markup, both extracted scripts passing `node --check`.
+
+### Fixed
+- **Dead reference in the Skill** — `SKILL.md` pointed its "Reference implementation" at `azure-diagrams/email-triage-copilot.drawio` "in the juliopessan repo", a path that does not exist in this repository. Now points at the two examples that actually ship here.
+- **Unverifiable evidence in the README** — the v0.2.0 audit claim cited a `Legal Document Automation` reference that is not in this repository, so no one cloning it could check the claim. Rewritten to cite the audit that *is* reproducible here: `examples/agentic-sales-intelligence/`, including the four defects the pass actually found rather than only its clean end state.
+- **`examples/solution-platform/` was invisible** — the example was committed but appeared in neither the README's examples section nor its repository-layout tree. Documented, with its counts verified against the file (16 nodes, 5 zones, 13 connectors) and its two proxy icons called out.
+- **Stale version narrative** — the "Where this is going" section still described v0.1.0 as the current state while the badge and manifest read v0.2.0. Rewritten for the current state, and extended with an explicit list of what is *not* done: three unimplemented modes, no automated test suite, no timing study and therefore no hours-saved claim.
+
 ## [0.2.0] — 2026-07-30
 
 ### Added

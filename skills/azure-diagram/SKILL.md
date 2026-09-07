@@ -83,4 +83,9 @@ Before delivering, self-score each category and keep optimizing until ALL are 10
 
 ## Reference implementation
 
-Working example with all rules applied: `azure-diagrams/email-triage-copilot.drawio` in the juliopessan repo (plus `DIAGRAM-RULES.md` and `preview.html` there).
+Two working examples ship in this repo, each with its Mermaid source beside the `.drawio` so the pipeline can be re-run and compared:
+
+- `examples/agentic-sales-intelligence/` — 32 nodes, 8 zones, 34 connectors. Audited against the v0.2.0 rule set; 0 open violations.
+- `examples/solution-platform/` — 16 nodes, 5 zones, 13 connectors. A conventional enterprise stack (access, application tier, data & AI, security, enterprise adapters).
+
+The canonical `AZD-xxx` rule table with severities and the non-destructive audit workflow lives in `DIAGRAM-RULES.md`, next to this file.
