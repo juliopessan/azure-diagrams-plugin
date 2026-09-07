@@ -243,46 +243,46 @@
           <mxGeometry height="30" width="140" x="55" y="995" as="geometry" />
         </mxCell>
         <mxCell id="legend_API_Management_Services" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/app_services/API_Management_Services.svg;rounded=1;" value="API Management" vertex="1">
-          <mxGeometry height="30" width="140" x="203" y="995" as="geometry" />
+          <mxGeometry height="30" width="140" x="195" y="995" as="geometry" />
         </mxCell>
         <mxCell id="legend_AI_Studio" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/ai_machine_learning/AI_Studio.svg;rounded=1;" value="Foundry Agent" vertex="1">
-          <mxGeometry height="30" width="140" x="351" y="995" as="geometry" />
+          <mxGeometry height="30" width="140" x="335" y="995" as="geometry" />
         </mxCell>
         <mxCell id="legend_Azure_OpenAI" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/ai_machine_learning/Azure_OpenAI.svg;rounded=1;" value="Azure OpenAI Model" vertex="1">
-          <mxGeometry height="30" width="140" x="499" y="995" as="geometry" />
+          <mxGeometry height="30" width="140" x="475" y="995" as="geometry" />
         </mxCell>
         <mxCell id="legend_Content_Safety" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/ai_machine_learning/Content_Safety.svg;rounded=1;" value="Content Safety" vertex="1">
-          <mxGeometry height="30" width="140" x="647" y="995" as="geometry" />
+          <mxGeometry height="30" width="140" x="615" y="995" as="geometry" />
         </mxCell>
         <mxCell id="legend_Azure_Cosmos_DB" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/databases/Azure_Cosmos_DB.svg;rounded=1;" value="Cosmos DB" vertex="1">
-          <mxGeometry height="30" width="140" x="795" y="995" as="geometry" />
+          <mxGeometry height="30" width="140" x="755" y="995" as="geometry" />
         </mxCell>
         <mxCell id="legend_Azure_SQL" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/databases/Azure_SQL.svg;rounded=1;" value="Azure SQL" vertex="1">
-          <mxGeometry height="30" width="140" x="943" y="995" as="geometry" />
+          <mxGeometry height="30" width="140" x="895" y="995" as="geometry" />
         </mxCell>
         <mxCell id="legend_Data_Lake_Storage_Gen1" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/storage/Data_Lake_Storage_Gen1.svg;rounded=1;" value="ADLS Gen2 *" vertex="1">
-          <mxGeometry height="30" width="140" x="1091" y="995" as="geometry" />
+          <mxGeometry height="30" width="140" x="1035" y="995" as="geometry" />
         </mxCell>
         <mxCell id="legend_Search_Services" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/app_services/Search_Services.svg;rounded=1;" value="Azure AI Search" vertex="1">
-          <mxGeometry height="30" width="140" x="1239" y="995" as="geometry" />
+          <mxGeometry height="30" width="140" x="1175" y="995" as="geometry" />
         </mxCell>
         <mxCell id="legend_Data_Factory" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/databases/Data_Factory.svg;rounded=1;" value="Data Factory" vertex="1">
-          <mxGeometry height="30" width="140" x="1387" y="995" as="geometry" />
+          <mxGeometry height="30" width="140" x="1315" y="995" as="geometry" />
         </mxCell>
         <mxCell id="legend_Function_Apps" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/compute/Function_Apps.svg;rounded=1;" value="Azure Functions" vertex="1">
-          <mxGeometry height="30" width="140" x="1535" y="995" as="geometry" />
+          <mxGeometry height="30" width="140" x="1455" y="995" as="geometry" />
         </mxCell>
         <mxCell id="legend_Service_Bus" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/integration/Service_Bus.svg;rounded=1;" value="Service Bus" vertex="1">
-          <mxGeometry height="30" width="140" x="1683" y="995" as="geometry" />
+          <mxGeometry height="30" width="140" x="1595" y="995" as="geometry" />
         </mxCell>
         <mxCell id="legend_Azure_Active_Directory" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/identity/Azure_Active_Directory.svg;rounded=1;" value="Entra ID" vertex="1">
-          <mxGeometry height="30" width="140" x="1831" y="995" as="geometry" />
+          <mxGeometry height="30" width="140" x="1735" y="995" as="geometry" />
         </mxCell>
         <mxCell id="legend_Key_Vaults" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/security/Key_Vaults.svg;rounded=1;" value="Key Vault" vertex="1">
-          <mxGeometry height="30" width="140" x="1979" y="995" as="geometry" />
+          <mxGeometry height="30" width="140" x="1875" y="995" as="geometry" />
         </mxCell>
         <mxCell id="legend_Application_Insights" parent="layerAnno" style="shape=label;html=1;imageAlign=left;imageVerticalAlign=middle;imageWidth=18;imageHeight=18;verticalAlign=middle;align=left;fontSize=10;spacingLeft=24;overflow=hidden;whiteSpace=nowrap;image=img/lib/azure2/devops/Application_Insights.svg;rounded=1;" value="Azure Monitor" vertex="1">
-          <mxGeometry height="30" width="140" x="2127" y="995" as="geometry" />
+          <mxGeometry height="30" width="140" x="2015" y="995" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

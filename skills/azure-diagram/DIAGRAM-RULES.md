@@ -46,7 +46,7 @@ than anecdotal.
 | Code | Rule | Severity |
 |---|---|---|
 | `AZD-101` | `mxGraphModel` carries an explicit `background="#FFFFFF"` — without it the diagram renders dark in some viewers | Blocking |
-| `AZD-102` | Canvas is 16:9 — `pageWidth="1600" pageHeight="900"`, single page | Blocking |
+| `AZD-102` | Canvas is 16:9 and a single page. `1600×900` is the default; dense architectures may extend the canvas (the shipped `agentic-sales-intelligence` reference runs at `2200×1240`) as long as the ratio and the 4-layer contract hold | Blocking |
 | `AZD-103` | Default cells `<mxCell id="0"/>` and `<mxCell id="1" parent="0"/>` are present (required by the MCP validator) | Blocking |
 | `AZD-104` | The four named layers exist in stacking order: `Zones` → `Connectors` → `Nodes` → `Annotations` | Blocking |
 | `AZD-105` | All content sits inside the 40px page margin | Advisory |

@@ -150,7 +150,9 @@ Then enable it as a Claude plugin (Cowork mode or Claude Code) pointing at the c
 
 ## Landing page
 
-`docs/index.html` is a self-contained landing page for the project — no build step, no dependencies, one file. To serve it at <https://juliopessan.github.io/azure-diagrams-plugin/>, enable GitHub Pages once: **Settings → Pages → Source: Deploy from a branch → `main` / `/docs`**. Until that is switched on, the link above 404s; the file still opens fine locally in any browser.
+`docs/index.html` is a self-contained landing page for the project — no build step, no dependencies, one file.
+
+To serve it at <https://juliopessan.github.io/azure-diagrams-plugin/>, set **Settings → Pages → Source: GitHub Actions** once. From then on `.github/workflows/pages.yml` deploys `docs/` on every push to `main`. This one setting cannot be automated: the workflow's `GITHUB_TOKEN` is not allowed to create the Pages site (`Resource not accessible by integration`), so the first enablement is manual by GitHub's design. Until it is switched on, the link above 404s and the workflow fails on the deploy step; the file still opens fine locally in any browser.
 
 Its proof panel carries only counts taken from this repository — the connector census and the `AZD-xxx` audit — and says so on the page. No hours-saved figure is claimed anywhere, because no timing study has been run.
 
