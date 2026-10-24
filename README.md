@@ -177,3 +177,7 @@ See [CHANGELOG.md](CHANGELOG.md) for release history and known gotchas. Version 
 ## License
 
 [MIT](LICENSE) — see the license file for details.
+
+## Privacy
+
+This plugin runs locally inside Claude Code and collects no data of its own. The only network calls are made by the bundled `drawio` MCP server (`https://mcp.draw.io/mcp`), which receives the diagram XML you ask Claude to validate; see the [draw.io privacy policy](https://www.drawio.com/privacy) for how that service handles it. Do not include confidential architecture details in diagrams you are not comfortable sending to that service.
