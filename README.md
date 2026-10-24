@@ -55,7 +55,7 @@ No connector was removed by guesswork — every change was a direct response to 
 
 v0.1.0 laid the technical foundation: plugin packaging, the `azure-diagram` Skill, official MCP integration, and one validated reference architecture. v0.2.0 made the quality claims auditable — `AZD-xxx` rule codes, explicit mode selection, and a non-destructive audit that found four real defects in an already-shipped diagram.
 
-What is *not* done yet, stated plainly: three of the five diagram modes (Sequence, Data Flow, Lifecycle) are documented as roadmap and deliberately not attempted; there is no automated test suite, because the quality gate is the MCP render plus a human look; and no timing study exists, so this repo makes no hours-saved claim. The next milestones — laid out in `docs/Azure-Architecture-Assistant-Claude-Edition.docx` — are a controlled pilot with real architects against a real baseline, then a public release path so any team can install this as a shared capability rather than a personal script.
+What is *not* done yet, stated plainly: three of the five diagram modes (Sequence, Data Flow, Lifecycle) are documented as roadmap and deliberately not attempted; there is no automated test suite, because the quality gate is the MCP render plus a human look; and no timing study exists, so this repo makes no hours-saved claim. The next milestones are a controlled pilot with real architects against a real baseline, then a public release path so any team can install this as a shared capability rather than a personal script.
 
 ---
 
@@ -111,7 +111,6 @@ azure-diagrams-plugin/
 │   └── solution-platform/           # .drawio + .mmd
 ├── docs/
 │   ├── index.html                   # landing page (GitHub Pages)
-│   └── Azure-Architecture-Assistant-Claude-Edition.docx
 ├── assets/hero.png
 ├── CHANGELOG.md
 └── LICENSE
@@ -168,7 +167,6 @@ Its proof panel carries only counts taken from this repository — the connector
 
 ## Project submission
 
-`docs/Azure-Architecture-Assistant-Claude-Edition.docx` is the full project write-up (use case, solution details, user journey, technology, KPIs, and roadmap), separating what's technically validated today from what's a pilot target.
 
 ## Contributing / versioning
 

@@ -54,7 +54,7 @@ Running the new AZD-xxx checklist against the shipped reference example (built i
 - **`AZD-602`** — all 15 legend entries had `spacingLeft=6` against an 18px icon, so every icon overlapped its own label's first letter. Corrected to `spacingLeft=24`.
 - **`AZD-001`** — no companion Mermaid source existed for this example. Added `agentic-sales-intelligence.mmd`, reconstructed to match the shipped topology exactly (39 nodes, 34 edges).
 
-`preview.png` regenerated to reflect all four fixes. Zone geometry was independently re-verified with no overlaps found (`Agent Orchestration` right edge at x=1580, `Model Layer` left edge at x=1620 — 40px clear). One cosmetic note: the "Model Layer" zone title renders with slightly soft edges in this specific headless-capture pipeline versus the other seven zone titles; the underlying geometry and style are identical to the others and the text is unaffected in the interactive draw.io viewer — flagged for future investigation, not blocking.
+The example preview image was regenerated to reflect all four fixes. Zone geometry was independently re-verified with no overlaps found (`Agent Orchestration` right edge at x=1580, `Model Layer` left edge at x=1620 — 40px clear). One cosmetic note: the "Model Layer" zone title renders with slightly soft edges in this specific headless-capture pipeline versus the other seven zone titles; the underlying geometry and style are identical to the others and the text is unaffected in the interactive draw.io viewer — flagged for future investigation, not blocking.
 
 ## [0.1.0] — 2026-07-16
 
@@ -65,7 +65,7 @@ Running the new AZD-xxx checklist against the shipped reference example (built i
   - **v1** — first render from the supplied Mermaid; 32 nodes, 41 connectors, 8 zones.
   - **v2** — fixed legend icon/label overlap and detangled the Agent Orchestration ↔ Model Layer connector fan by swapping the Model Router and Model row positions; widened inter-zone corridors.
   - **v3 (final)** — decluttered connectors on explicit user request: removed 3 cross-cutting dashed lines (UI→Entra ID, App→Key Vault, App→Monitor, now communicated via the zone label instead of wiring), 2 duplicate Orchestrator→Data Platform edges, and 2 Service Bus async return-loop edges. Net: 41 → 34 connectors (-17%), rendered with `routing: "libavoid"` for obstacle-avoiding orthogonal routing.
-- `docs/Azure-Architecture-Assistant-Claude-Edition.docx` — full project submission document (Use Case, Details, Journey, Technology, Metrics, Roadmap), adapted from a Codex-plugin template to this Claude plugin, using validated evidence from the build above.
+- Project write-up (use case, journey, technology, metrics, roadmap) kept outside the plugin package.
 - `LICENSE` (MIT).
 
 ### Known gotchas (fixed during development, documented for future contributors)
