@@ -1,14 +1,38 @@
-# Azure Diagrams
+# Azure Architecture Assistant
 
-**Azure Architecture Assistant** — turn Mermaid definitions or plain-language architecture descriptions into presentation-ready, editable draw.io diagrams with official Microsoft Azure and Power Platform icons, generated and refined conversationally inside Claude.
+**Conversational generation and validation of editable Azure architecture diagrams**
 
-[![Version](https://img.shields.io/badge/version-0.2.2-blue)](CHANGELOG.md)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Repo](https://img.shields.io/badge/github-juliopessan%2Fazure--diagrams--plugin-181717?logo=github)](https://github.com/juliopessan/azure-diagrams-plugin)
+A Claude Skill that turns Mermaid definitions or plain-language architecture descriptions into native, editable draw.io diagrams using official Microsoft Azure and Power Platform iconography. The official draw.io MCP integration provides shape discovery, diagram creation and rendering validation.
 
-**→ [Landing page](https://juliopessan.github.io/azure-diagrams-plugin/)** · [Rule table](skills/azure-diagram/DIAGRAM-RULES.md) · [Examples](examples/)
+## Engineering workflow
 
-![Azure Architecture Copilot — Mermaid to draw.io in one conversation](assets/hero.png)
+`Architecture intent → semantic analysis → zones and components → official icon lookup → draw.io XML → MCP render validation → human review`
+
+The Mermaid or natural-language input is treated as the logical source of truth. The Skill handles visual hierarchy, zones, connectors and presentation while preserving the architecture's meaning and boundaries.
+
+## What is implemented
+
+- Claude Skill for diagram generation and conversational refinement.
+- Official draw.io MCP integration for shape search and diagram rendering.
+- Rule-coded design checks using stable `AZD-xxx` identifiers.
+- Audit tooling for checking supported structural and visual rules.
+- Editable `.drawio` output, source Mermaid/XML and reference examples.
+- Example case study with a documented before/after review.
+
+## Quality gates and limitations
+
+The documented delivery path combines MCP structural validation, the mechanical AZD audit and human inspection. The audit is useful evidence, but it is not a complete automated test suite or a certification of architectural correctness.
+
+As documented in the current project, Flowchart and Architecture modes are implemented; Sequence, Data Flow and Lifecycle modes remain roadmap items. No general hours-saved claim is made. Validate the generated diagram against the actual system design before using it as an authoritative architecture artifact.
+
+## Explore
+
+- [Landing page](https://juliopessan.github.io/azure-diagrams-plugin/)
+- [Rule catalogue](skills/azure-diagram/DIAGRAM-RULES.md)
+- [Examples](examples/)
+- [Changelog](CHANGELOG.md)
+
+---
 
 ## The gap this closes
 
